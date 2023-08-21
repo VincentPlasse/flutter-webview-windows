@@ -66,9 +66,9 @@ else()
     "util/cpuid/cpuinfo.cc"
   )
   # Enable AVX2 for pixel buffer conversions
-  if(MSVC)
-    target_compile_options(${PLUGIN_NAME} PRIVATE "/arch:AVX2")
-  endif()
+  #if(MSVC)
+  #  target_compile_options(${PLUGIN_NAME} PRIVATE "/arch:AVX2")
+  #endif()
 endif()
 
 apply_standard_settings(${PLUGIN_NAME})
